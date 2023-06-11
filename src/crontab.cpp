@@ -4,6 +4,8 @@ using namespace std;
 
 CronEntry::CronEntry() :
     enabled(false),
+    expr(),
+    next(0),
     callback(nullptr)
 {
 
@@ -46,6 +48,11 @@ CronTab::~CronTab() {
 time_t CronTab::time(time_t* t)
 {
     return getTimeFunc(t);
+}
+
+void CronTab::setTimeFunction(std::function<time_t(time_t*)> fn)
+{
+    this->getTimeFunc = fn;
 }
 
 std::variant<CronID,CronError> CronTab::add(const char* entry, std::function<void()> callback)
