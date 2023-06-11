@@ -1,6 +1,6 @@
 {
     "name": "CronTab",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "frameworks": "*",
     "keywords": "crontab, time, schedule, alarm",
     "description": "Using crontab syntax, schedule callbacks",
