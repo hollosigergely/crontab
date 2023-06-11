@@ -1,0 +1,17 @@
+{
+    "name": "CronTab",
+    "version": "0.0.1",
+    "frameworks": "*",
+    "keywords": "crontab, time, schedule, alarm",
+    "description": "Using crontab syntax, schedule callbacks",
+    "url": "https://github.com/hollosigergely/crontab",
+    "authors":
+    {
+            "name": "Hollósi Gergely"
+    },
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/hollosigergely/crontab"
+    }
+    }
