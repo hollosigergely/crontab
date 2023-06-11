@@ -70,4 +70,4 @@ void setup() {
 NTP
 ---
 
-You can find an example using the (Arduino NTPClient)[https://github.com/arduino-libraries/NTPClient]. Please note, that the library method `serve()` only checks, that the timepoint for the callback has elapsed or not. The clock typically starts from 0 (in case of embedded systems), and when the clock jump to the actual time (e.g. NTP sets new time), the callbacks might fire spuriously. To work properly, you should ensure that NTP has set the clock already, before using crontab (see example).
+You can find an example using the [Arduino NTPClient](https://github.com/arduino-libraries/NTPClient). Please note, that the library method `serve()` only checks, that the timepoint for the callback has elapsed or not. The clock typically starts from 0 (in case of embedded systems), and when the clock jump to the actual time (e.g. NTP sets new time), the callbacks might fire spuriously. To work properly, you should ensure that NTP has set the clock already, before using crontab (see example).
