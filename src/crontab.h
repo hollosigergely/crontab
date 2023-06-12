@@ -42,6 +42,7 @@ public:
     void                                remove(CronID id);
     void                                removeAll();
 
+    bool                                validate(const char* entry);
     bool                                isAllocated(CronID id);
     int                                 count();
 

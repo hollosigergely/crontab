@@ -55,6 +55,15 @@ void CronTab::setTimeFunction(std::function<time_t(time_t*)> fn)
     this->getTimeFunc = fn;
 }
 
+bool CronTab::validate(const char* entry)
+{
+    const char* err = NULL;
+    cron_expr   expr;
+
+    cron_parse_expr(entry, &expr, &err);
+    return err != NULL;
+}
+
 std::variant<CronID,CronError> CronTab::add(const char* entry, std::function<void()> callback)
 {
     const char* err = NULL;
